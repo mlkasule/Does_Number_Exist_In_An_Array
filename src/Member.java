@@ -67,7 +67,7 @@ public class Member {
 
 		if (firstIndex > lastIndex)
 			return false;
-		if (arr[middleIndex] == value)
+		if (arr[middleIndex] == value) // target value at middle to be the key
 			return true;
 		else if (arr[middleIndex] < value)
 			return isMember(arr, middleIndex + 1, lastIndex, value); // firstIndex = middleIndex + 1
